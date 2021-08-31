@@ -16,7 +16,18 @@ const User = sequelize.define(
     email: {
       type: Sequelize.STRING,
       allowNull: false,
-      unique: true,
+      validate: {
+        isEmail: {
+          msg: "Email not valid",
+        },
+        isUnique(value) {
+          return User.findOne({ where: { email: value } }).then((email) => {
+            if (email) {
+              throw new Error("Email already exist");
+            }
+          });
+        },
+      },
     },
     password: {
       type: Sequelize.STRING,

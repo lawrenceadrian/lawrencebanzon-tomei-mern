@@ -1,106 +1,420 @@
-.rectangle {
-  height: 35px;
-  width: 800px;
-  background-color: #c5dcfa;
-  padding: 10 0;
-  text-align: center;
-}
+@media only screen and (min-width: 200px) and (max-width: 359px) {
+  .rectangle {
+    display: block;
+    align-items: center;
+    background-color: #c5dcfa;
+    padding: 10px;
+    margin-top: -60px;
+  }
+  .rectangle-text {
+    display: flex;
+    justify-content: center;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+  }
 
-.rectangle-container {
-  display: flex;
-  justify-content: center;
+  .details-container {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+  }
 
-  padding-top: 150px;
-  padding-bottom: 10px;
-}
+  .details-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+  }
 
-.rectangle-text {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 600;
-  font-size: 21px;
-  color: #000;
-  margin-top: 5px;
-}
+  .inputContainer-one {
+    display: block;
+    align-items: center;
+    max-width: 100vw;
+  }
 
-.container {
-  display: block;
-  justify-content: center;
+  .inputContainer-image {
+    display: grid;
+  }
 
-  align-items: center;
-  margin-left: 250px;
-  margin-right: 250px;
-}
+  .img-avatar {
+    display: block;
+    margin: auto !important;
+  }
 
-.details {
-  height: 30px;
-  width: 786px;
-  /* background-color: #c5dcfa; */
-  padding: 10 0;
-  text-align: center;
-}
-
-.details-container {
-  display: flex;
-  justify-content: center;
-
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.details-text {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  color: #000;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.inputContainer {
-  display: flex;
-  justify-content: center;
-}
-
-.inputContainer-one {
-  display: flex;
-  padding: 20px;
-  margin-left: 120px;
-}
-
-.inputContainer-image {
-  width: 120px;
-  margin-right: 50px;
-}
-
-/* .inputContainer-form {
-} */
-
-.inputButtonClass {
-  margin: auto;
-  align-content: center;
-  display: block;
-  color: rgba(0, 0, 0, 0);
-  /* position: absolute;
+  .inputButtonClass {
+    margin: auto;
+    align-content: center;
+    display: block;
+    color: rgba(0, 0, 0, 0);
+    /* position: absolute;
   width: 80;
   height: 80;
   cursor: pointer; */
-  opacity: 0;
+    opacity: 0;
+  }
+  .inputButtonLabel {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: bold;
+    color: #000;
+  }
 }
 
-.inputContainer-image > img {
-  margin: inherit;
-  width: 110px;
+@media only screen and (min-width: 360px) and (max-width: 499px) {
+  .rectangle {
+    display: block;
+    align-items: center;
+    background-color: #c5dcfa;
+    padding: 10px;
+    margin-top: -60px;
+  }
+  .rectangle-text {
+    display: flex;
+    justify-content: center;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+  }
+
+  .details-container {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+  }
+
+  .details-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+  }
+
+  .inputContainer-one {
+    display: block;
+    align-items: center;
+    max-width: 100vw;
+  }
+
+  .inputContainer-image {
+    display: grid;
+  }
+
+  .img-avatar {
+    display: block;
+    margin: auto !important;
+  }
+
+  .inputButtonClass {
+    margin: auto;
+    align-content: center;
+    display: block;
+    color: rgba(0, 0, 0, 0);
+    /* position: absolute;
+  width: 80;
+  height: 80;
+  cursor: pointer; */
+    opacity: 0;
+  }
+  .inputButtonLabel {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: bold;
+    color: #000;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+  .rectangle {
+    display: block;
+    align-items: center;
+    background-color: #c5dcfa;
+    padding: 10px;
+    margin-top: 50px;
+  }
+
+  .rectangle-container {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .rectangle-text {
+    display: flex;
+    justify-content: center;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+  }
+
+  .details-container {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+  }
+
+  .details-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .inputContainer-one {
+    display: block;
+    align-items: center;
+    max-width: 100vw;
+  }
+
+  .inputContainer-image {
+    display: grid;
+  }
+
+  .img-avatar {
+    display: block;
+    margin: auto !important;
+  }
+
+  .inputButtonClass {
+    margin: auto;
+    align-content: center;
+    display: block;
+    color: rgba(0, 0, 0, 0);
+    /* position: absolute;
+  width: 80;
+  height: 80;
+  cursor: pointer; */
+    opacity: 0;
+  }
+  .inputButtonLabel {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: bold;
+    color: #000;
+  }
 }
 
-.inputButtonLabel {
-  margin-left: 29px;
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: bold;
-  color: #000;
+@media only screen and (min-width: 769px) and (max-width: 841px) {
+  .rectangle {
+    height: 35px;
+    width: 800px;
+    background-color: #c5dcfa;
+    padding: 10 0;
+    text-align: center;
+  }
+
+  .rectangle-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 10px;
+  }
+
+  .rectangle-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 21px;
+    color: #000;
+    margin-top: 5px;
+  }
+
+  .container {
+    display: block;
+    justify-content: center;
+
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .details {
+    height: 30px;
+    width: 786px;
+    /* background-color: #c5dcfa; */
+    padding: 10 0;
+    text-align: center;
+  }
+
+  .details-container {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .details-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000;
+    margin-left: -25%;
+    margin-right: -25%;
+  }
+
+  .inputContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .inputContainer-one {
+    display: flex;
+    padding: 20px;
+    margin-left: 120px;
+  }
+
+  .inputContainer-image {
+    width: 120px;
+    margin-right: 50px;
+  }
+
+  /* .inputContainer-form {
+} */
+
+  .inputButtonClass {
+    margin: auto;
+    align-content: center;
+    display: block;
+    color: rgba(0, 0, 0, 0);
+    /* position: absolute;
+  width: 80;
+  height: 80;
+  cursor: pointer; */
+    opacity: 0;
+  }
+
+  .inputContainer-image > img {
+    margin: inherit;
+    width: 110px;
+  }
+
+  .inputButtonLabel {
+    margin-left: 29px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: bold;
+    color: #000;
+  }
+}
+
+@media only screen and (min-width: 842px) {
+  .rectangle {
+    height: 35px;
+    width: 800px;
+    background-color: #c5dcfa;
+    padding: 10 0;
+    text-align: center;
+  }
+
+  .rectangle-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 10px;
+  }
+
+  .rectangle-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 21px;
+    color: #000;
+    margin-top: 5px;
+  }
+
+  .container {
+    display: block;
+    justify-content: center;
+
+    align-items: center;
+    /* margin-left: 250px;
+    margin-right: 250px; */
+  }
+
+  .details {
+    height: 30px;
+    width: 786px;
+    /* background-color: #c5dcfa; */
+    padding: 10 0;
+    text-align: center;
+  }
+
+  .details-container {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .details-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .inputContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .inputContainer-one {
+    display: flex;
+    padding: 20px;
+    margin-left: 120px;
+  }
+
+  .inputContainer-image {
+    width: 120px;
+    margin-right: 50px;
+  }
+
+  /* .inputContainer-form {
+} */
+
+  .inputButtonClass {
+    margin: auto;
+    align-content: center;
+    display: block;
+    color: rgba(0, 0, 0, 0);
+    /* position: absolute;
+  width: 80;
+  height: 80;
+  cursor: pointer; */
+    opacity: 0;
+  }
+
+  .inputContainer-image > img {
+    margin: inherit;
+    width: 110px;
+  }
+
+  .inputButtonLabel {
+    margin-left: 29px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: bold;
+    color: #000;
+  }
 }

@@ -2,7 +2,9 @@ import "./App.css";
 import logo from "./assets/Logo.png";
 import SignupForm from "./components/SignupForm.js";
 import RoundImages from "./components/RoundImages.js";
+import WizardText from "./components/WizardText.js";
 import RectangleContainer from "./components/RectangleContainer.js";
+
 function App() {
   return (
     <div className="App">
@@ -18,6 +20,7 @@ function App() {
         </div>
       </header>
       <RoundImages />
+      <WizardText />
       <RectangleContainer />
       {/* <SignupForm /> */}
     </div>

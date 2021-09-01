@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { register } from "../actions/userActions";
 import "./SignupForm.css";
+import ArrowRightLogo from "../assets/arrow-right.png";
 
 const SignupForm = () => {
   const [email, setEmail] = useState("");
@@ -86,14 +87,14 @@ const SignupForm = () => {
       <br />
       <div class="parent-wrapper">
         <div class="parent">
-          <div class="child">
+          {/* <div class="child">
             <label className="inputTextStyle">
               AVATAR
               <p className="pContainer">
                 <input type="file" name="avatar" onChange={handleFileInput} />
               </p>
             </label>
-          </div>
+          </div> */}
           <div class="child">
             <label className="inputTextStyle">
               NAME
@@ -145,7 +146,9 @@ const SignupForm = () => {
               </p>
             </label>
           </div>
-          <input type="submit" value="SAVE & NEXT" className="submitButton" />
+          <div>
+            <input type="submit" value="SAVE & NEXT" className="submitButton" />
+          </div>
         </div>
       </div>
       {message}

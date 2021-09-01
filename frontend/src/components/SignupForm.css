@@ -1,58 +1,232 @@
-/* .loginContainer {
-  display: flex;
-  flex-direction: column;
-  margin: 20px;
-} */
-.parent-wrapper {
-  height: 100%;
-  width: 550px;
-  padding: 20px;
-  margin-top: 20px;
-  margin-right: 98px;
+@media only screen and (min-width: 200px) and (max-width: 359px) {
+  .parent {
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .inputTextStyle {
+    color: #c7c7c7;
+    font-size: 16px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+  }
+  input {
+    border-color: #c7c7c7;
+    border-radius: 10px;
+    width: 90%;
+    height: 25px;
+    border-width: 1px 1.5px 1.5px 1.2px;
+    outline: none;
+    border-style: solid;
+  }
+  .inputContainer-image {
+    margin-bottom: -30px;
+  }
+  .submitButton {
+    background-color: #c5dcfa;
+    color: #0a3977;
+    font-size: 16px;
+    width: 180px;
+    height: 50px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+    border: none;
+  }
+  .pContainer > input {
+    text-align: center;
+  }
 }
-.parent {
-  display: flex;
-  font-size: 0;
-  flex-wrap: wrap;
-  margin: -43px 0 0 -50px;
-}
-.child {
-  display: inline-block;
-  margin: -10px -20px -25px 20px;
-  flex-grow: 1;
-  height: 100px;
-  width: calc(100% * (1 / 2) - 10px - 1px);
-}
+@media only screen and (min-width: 360px) and (max-width: 499px) {
+  .parent {
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .inputTextStyle {
+    color: #c7c7c7;
+    font-size: 16px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+  }
+  input {
+    border-color: #c7c7c7;
+    border-radius: 10px;
+    width: 90%;
+    height: 25px;
+    border-width: 1px 1.5px 1.5px 1.2px;
+    outline: none;
+    border-style: solid;
+  }
+  .submitButton {
+    background-color: #c5dcfa;
+    color: #0a3977;
+    font-size: 16px;
+    width: 180px;
+    height: 50px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+    border: none;
+  }
 
-input {
-  border-color: #c7c7c7;
-  border-radius: 10px;
-  width: 90%;
-  height: 25px;
-  border-width: 1px 1.5px 1.5px 1.2px;
-  outline: none;
-  border-style: solid;
+  .inputContainer-image {
+    margin-bottom: -30px;
+  }
+  .pContainer > input {
+    text-align: center;
+  }
 }
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+  .parent {
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .inputTextStyle {
+    color: #c7c7c7;
+    font-size: 16px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+  }
+  input {
+    border-color: #c7c7c7;
+    border-radius: 10px;
+    width: 90%;
+    height: 25px;
+    border-width: 1px 1.5px 1.5px 1.2px;
+    outline: none;
+    border-style: solid;
+  }
+  .submitButton {
+    background-color: #c5dcfa;
+    color: #0a3977;
+    font-size: 16px;
+    width: 180px;
+    height: 50px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+    border: none;
+  }
+  .inputContainer-image {
+    margin-bottom: -30px;
+  }
 
-.inputTextStyle {
-  color: #c7c7c7;
-  font-size: 16px;
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 600;
+  .pContainer {
+    margin-bottom: 20px;
+  }
+
+  .pContainer > input {
+    text-align: center;
+  }
 }
+@media only screen and (min-width: 769px) and (max-width: 841px) {
+  .parent-wrapper {
+    height: 100%;
+    width: 550px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 98px;
+  }
+  .parent {
+    display: flex;
+    font-size: 0;
+    flex-wrap: wrap;
+    margin: -43px 0 0 -50px;
+  }
+  .child {
+    display: inline-block;
+    margin: -10px -20px -25px 20px;
+    flex-grow: 1;
+    height: 100px;
+    width: calc(100% * (1 / 2) - 10px - 1px);
+  }
 
-.pContainer {
-  margin-top: 0px;
+  input {
+    border-color: #c7c7c7;
+    border-radius: 10px;
+    width: 90%;
+    height: 25px;
+    border-width: 1px 1.5px 1.5px 1.2px;
+    outline: none;
+    border-style: solid;
+  }
+
+  .inputTextStyle {
+    color: #c7c7c7;
+    font-size: 16px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+    margin-left: 13px;
+  }
+
+  .pContainer {
+    margin-top: 0px;
+  }
+
+  .submitButton {
+    background-color: #c5dcfa;
+    color: #0a3977;
+    font-size: 16px;
+    width: 180px;
+    height: 50px;
+    margin-left: 415px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+    border: none;
+  }
 }
+@media only screen and (min-width: 842px) {
+  .parent-wrapper {
+    height: 100%;
+    width: 550px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 98px;
+  }
+  .parent {
+    display: flex;
+    font-size: 0;
+    flex-wrap: wrap;
+    margin: -43px 0 0 -50px;
+  }
+  .child {
+    display: inline-block;
+    margin: -10px -20px -25px 20px;
+    flex-grow: 1;
+    height: 100px;
+    width: calc(100% * (1 / 2) - 10px - 1px);
+  }
 
-.submitButton {
-  background-color: #c5dcfa;
-  color: #0a3977;
-  font-size: 16px;
-  width: 180px;
-  height: 50px;
-  margin-left: 415px;
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 600;
-  border: none;
+  input {
+    border-color: #c7c7c7;
+    border-radius: 10px;
+    width: 90%;
+    height: 25px;
+    border-width: 1px 1.5px 1.5px 1.2px;
+    outline: none;
+    border-style: solid;
+  }
+
+  .inputTextStyle {
+    color: #c7c7c7;
+    font-size: 16px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+    margin-left: 13px;
+  }
+
+  .pContainer {
+    margin-top: 0px;
+  }
+
+  .submitButton {
+    background-color: #c5dcfa;
+    color: #0a3977;
+    font-size: 16px;
+    width: 180px;
+    height: 50px;
+    margin-left: 415px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+    border: none;
+  }
 }

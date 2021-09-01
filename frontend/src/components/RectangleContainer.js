@@ -25,7 +25,12 @@ const RectangleContainer = () => {
       <div className="inputContainer">
         <div className="inputContainer-one">
           <div className="inputContainer-image">
-            <img src={Avatar} alt="avatar-logo" align="left" />
+            <img
+              src={Avatar}
+              alt="avatar-logo"
+              align="left"
+              className="img-avatar"
+            />
             <div>
               <label for="file" className="inputButtonLabel">
                 Upload

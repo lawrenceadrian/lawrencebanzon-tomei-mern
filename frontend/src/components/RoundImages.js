@@ -11,31 +11,31 @@ const RoundImages = () => {
   return (
     <div className="row">
       <span>
-        <img src={WizardStepOne}></img>
-      </span>
-      <span>
-        <img className="horizontalLine" src={WizardHorizontalBar}></img>
-      </span>
-      <span>
-        <img src={WizardStepTwo}></img>
+        <img src={WizardStepOne} className="wizardStepImage"></img>
       </span>
       <span>
         <img src={WizardHorizontalBar} className="horizontalLine"></img>
       </span>
       <span>
-        <img src={WizardStepThree}></img>
+        <img src={WizardStepTwo} className="wizardStepImage"></img>
       </span>
       <span>
         <img src={WizardHorizontalBar} className="horizontalLine"></img>
       </span>
       <span>
-        <img src={WizardStepFour}></img>
+        <img src={WizardStepThree} className="wizardStepImage"></img>
       </span>
       <span>
         <img src={WizardHorizontalBar} className="horizontalLine"></img>
       </span>
       <span>
-        <img src={WizardStepFive}></img>
+        <img src={WizardStepFour} className="wizardStepImage"></img>
+      </span>
+      <span>
+        <img src={WizardHorizontalBar} className="horizontalLine"></img>
+      </span>
+      <span>
+        <img src={WizardStepFive} className="wizardStepImage"></img>
       </span>
     </div>
   );

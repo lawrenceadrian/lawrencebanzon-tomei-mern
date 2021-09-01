@@ -19,10 +19,11 @@ function App() {
           <img src={logo} alt="logo" />
         </div>
       </header>
+
       <RoundImages />
       <WizardText />
       <RectangleContainer />
-      {/* <SignupForm /> */}
+      <SignupForm />
     </div>
   );
 }

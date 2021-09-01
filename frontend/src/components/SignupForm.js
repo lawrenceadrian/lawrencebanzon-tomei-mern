@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { register } from "../actions/userActions";
 import "./SignupForm.css";
 import ArrowRightLogo from "../assets/arrow-right.png";
+import Avatar from "../assets/Avatar.png";
 
 const SignupForm = () => {
   const [email, setEmail] = useState("");
@@ -44,6 +45,19 @@ const SignupForm = () => {
       requiredInput.push({ value: "Please re-enter your password" });
       errorCount++;
     }
+    if (!avatar) {
+      requiredInput.push({ value: "Please upload a photo of you" });
+      errorCount++;
+    } else {
+      let fileTypeCheck =
+        avatar.type.substr(avatar.type.lastIndexOf("/") + 0) + "$";
+      fileTypeCheck = avatar.type.replace(new RegExp(fileTypeCheck), "");
+
+      if (fileTypeCheck != "image") {
+        requiredInput.push({ value: "File selected is not a photo" });
+        errorCount++;
+      }
+    }
     console.log("validateFields");
     return errorCount > 0 ? true : false;
   };
@@ -70,32 +84,73 @@ const SignupForm = () => {
     }
   };
 
+  const [imageSrc, setImageSrc] = useState(Avatar);
   const handleFileInput = (e) => {
     // handle validations
     const file = e.target.files[0];
     console.log(file);
     setAvatar(file);
-    // if (file.size > 1024)
-    //   onFileSelectError({ error: "File size cannot exceed more than 1MB" });
-    // else onFileSelectSuccess(file);
+
+    if (file) {
+      let fileTypeCheck =
+        file.type.substr(file.type.lastIndexOf("/") + 0) + "$";
+      fileTypeCheck = file.type.replace(new RegExp(fileTypeCheck), "");
+
+      if (fileTypeCheck == "image") {
+        var reader = new FileReader();
+        reader.readAsDataURL(file);
+
+        reader.onloadend = function (e) {
+          setImageSrc(e.target.result);
+        }.bind(this);
+      } else {
+        setImageSrc(Avatar);
+      }
+    } else {
+      setImageSrc(Avatar);
+    }
   };
   return (
     <form onSubmit={submitHandler}>
-      {requiredInputState.map((validationAlert) => (
-        <li>{validationAlert.value}</li>
-      ))}
+      <div className="validationAlert">
+        {requiredInputState.map((validationAlert) => (
+          <li>{validationAlert.value}</li>
+        ))}
+      </div>
+
       <br />
-      <div class="parent-wrapper">
-        <div class="parent">
-          {/* <div class="child">
-            <label className="inputTextStyle">
-              AVATAR
-              <p className="pContainer">
-                <input type="file" name="avatar" onChange={handleFileInput} />
-              </p>
-            </label>
-          </div> */}
-          <div class="child">
+
+      <div className="parent-wrapper">
+        <div className="parent parent-avatar">
+          <div className="inputContainer">
+            <div className="inputContainer-one">
+              <div className="inputContainer-image">
+                <img
+                  src={imageSrc}
+                  alt="avatar-logo"
+                  align="left"
+                  className="img-avatar"
+                />
+                <div>
+                  <label for="file" className="inputButtonLabel">
+                    Upload
+                  </label>
+                  <input
+                    type="file"
+                    id="file"
+                    className="inputButtonClass"
+                    onChange={handleFileInput}
+                  />
+                </div>
+              </div>
+              {/* <div className="inputContainer-form">
+                <SignupForm />
+              </div> */}
+            </div>
+          </div>
+        </div>
+        <div className="parent parent-form">
+          <div className="child">
             <label className="inputTextStyle">
               NAME
               <p className="pContainer">
@@ -108,7 +163,7 @@ const SignupForm = () => {
               </p>
             </label>
           </div>
-          <div class="child">
+          <div className="child">
             <label className="inputTextStyle">
               EMAIL
               <p className="pContainer">
@@ -120,7 +175,7 @@ const SignupForm = () => {
               </p>
             </label>
           </div>
-          <div class="child">
+          <div className="child">
             <label className="inputTextStyle">
               PASSWORD
               <p className="pContainer">
@@ -133,7 +188,7 @@ const SignupForm = () => {
               </p>
             </label>
           </div>
-          <div class="child">
+          <div className="child">
             <label className="inputTextStyle">
               CONFIRM PASSWORD
               <p className="pContainer">

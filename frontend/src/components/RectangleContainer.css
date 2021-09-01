@@ -383,7 +383,7 @@
   .inputContainer-one {
     display: flex;
     padding: 20px;
-    margin-left: 120px;
+    /* margin-left: 120px; */
   }
 
   .inputContainer-image {

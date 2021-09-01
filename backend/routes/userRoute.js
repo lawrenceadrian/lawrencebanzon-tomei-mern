@@ -8,6 +8,10 @@ import { dirname } from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
+
+let locationPath = __dirname.substr(__dirname.lastIndexOf("/") + 1) + "$";
+locationPath = __dirname.replace(new RegExp(locationPath), "");
+
 router.post("/register", async (req, res) => {
   let avatarFile = req.files.avatar;
   let avatarFileType = req.files.avatar.name;
@@ -15,7 +19,7 @@ router.post("/register", async (req, res) => {
     ((avatarFileType.lastIndexOf(".") - 1) >>> 0) + 2
   );
   let avatarFilename = new Date().getTime() + "." + avatarFileType;
-  let avatarUploadPath = __dirname + "/uploads" + avatarFilename;
+  let avatarUploadPath = locationPath + "public/uploads/" + avatarFilename;
 
   avatarFile.mv(avatarUploadPath, function (err) {
     if (err) return res.status(500).send(err);

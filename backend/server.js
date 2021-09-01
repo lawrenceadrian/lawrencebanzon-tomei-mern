@@ -6,12 +6,14 @@ import cors from "cors";
 import expressFileUpload from "express-fileupload";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
+import helmet from "helmet";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 connectDB();
 // dotenv.config();
 
 const app = express();
+app.use(helmet());
 app.use(expressFileUpload());
 
 app.use(express.static("public"));

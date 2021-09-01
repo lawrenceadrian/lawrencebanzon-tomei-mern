@@ -22,7 +22,7 @@ const RectangleContainer = () => {
         </div>
       </div>
 
-      <div className="inputContainer">
+      {/* <div className="inputContainer">
         <div className="inputContainer-one">
           <div className="inputContainer-image">
             <img
@@ -42,7 +42,7 @@ const RectangleContainer = () => {
             <SignupForm />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

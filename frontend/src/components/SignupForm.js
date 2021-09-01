@@ -67,7 +67,7 @@ const SignupForm = () => {
       setMessage(userInfo.message);
       setStateRequiredInput([]);
     } else {
-      setMessage("userInfo empty");
+      setMessage("");
     }
   }, [userInfo]);
 
@@ -132,7 +132,7 @@ const SignupForm = () => {
                   className="img-avatar"
                 />
                 <div>
-                  <label for="file" className="inputButtonLabel">
+                  <label htmlFor="file" className="inputButtonLabel">
                     Upload
                   </label>
                   <input
@@ -149,6 +149,7 @@ const SignupForm = () => {
             </div>
           </div>
         </div>
+        <br />
         <div className="parent parent-form">
           <div className="child">
             <label className="inputTextStyle">
@@ -206,7 +207,7 @@ const SignupForm = () => {
           </div>
         </div>
       </div>
-      {message}
+      <div className="successfulAlert">{message}</div>
     </form>
   );
 };

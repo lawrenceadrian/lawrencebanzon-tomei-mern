@@ -42,6 +42,8 @@
   .img-avatar {
     display: block;
     margin: auto !important;
+    width: 100px;
+    height: auto;
   }
 
   .inputButtonClass {
@@ -108,6 +110,8 @@
   .img-avatar {
     display: block;
     margin: auto !important;
+    width: 100px;
+    height: auto;
   }
 
   .inputButtonClass {
@@ -180,6 +184,8 @@
   .img-avatar {
     display: block;
     margin: auto !important;
+    width: 100px;
+    height: auto;
   }
 
   .inputButtonClass {
